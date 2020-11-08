@@ -18,6 +18,22 @@ def contactPage():
 def contribute():
 	return render_template("contribute.html")
 
+@app.route("/Cake-By-Flavour")
+def cake_by_flavour():
+	return render_template("cake_by_flavour.html")
+
+@app.route("/Cake-By-Theme")
+def cake_by_theme():
+	return render_template("cake_by_theme.html")
+
+@app.route("/newly-arrived")
+def newly_arrived_cakes():
+	return render_template("newly_arrived_cakes.html")
+
+@app.route("/Cup-Cakes")
+def Cup_Cake():
+	return render_template("Cup_Cake.html")
+
 if __name__ == "__main__":
 	app.run(debug = True)
 
