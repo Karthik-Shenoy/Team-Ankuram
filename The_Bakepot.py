@@ -4,11 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def homepage():
-	return
-
-@app.route("/shop")
-def shopPage():
-	return render_template("shop.html")
+	return render_template("shop.html")	
 
 @app.route("/Contact-Us")
 def contactPage():
